@@ -31,3 +31,72 @@ O projeto contempla os seguintes recursos e regras de negócio:
 * **Teste de Rotas:** Postman
 * **Conceitos Aplicados:** Padrão MVC (Models, Controllers, Repositories), Async/Await, Middlewares.
 
+---
+
+## ⚙️ Como Executar o Projeto Localmente
+
+Para rodar esta API na sua máquina, você precisará do [Node.js](https://nodejs.org/) e do [Docker](https://www.docker.com/) instalados.
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/SEU_USUARIO/ecommerce-api-nodejs.git
+   cd ecommerce-api-nodejs
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+
+3. **Suba o contêiner do MongoDB via Docker:**
+   *(Consulte o [guia de configuração do MongoDB com Docker](https://blog.balta.io/mongodb-docker/) caso não tenha o banco configurado localmente).*
+   ```bash
+   docker run --name mongo -p 27017:27017 -d mongo
+   ```
+
+4. **Inicie o servidor (Modo Dev com Nodemon):**
+   ```bash
+   npm start
+   ```
+   > A API estará rodando em `http://localhost:3000` (ou na porta configurada no seu ambiente).
+
+---
+
+## 📚 Jornada de Aprendizado (Ementa)
+
+<details>
+<summary><b>Clique para expandir os tópicos abordados e implementados neste projeto</b></summary>
+
+**Fundamentos e Configuração**
+* Instalação Node, NPM e VS Code
+* `npm init` e instalação de pacotes (Configuração do NPM Start e Nodemon)
+* Criando um servidor Web (Express)
+* Normalizando portas e gerenciando Erros do Servidor
+* Iniciando o Debug
+
+**Arquitetura e Roteamento**
+* Separando o Servidor
+* Padrão de Projeto (Rotas, Controllers, Repositórios)
+* Operações CRUD REST
+
+**Banco de Dados (MongoDB)**
+* MongoDB Setup via Docker
+* Integração com Mongoose (Models)
+* Modelagem: Produtos, Clientes (Customer), Pedidos (Order) e Itens (OrderItems)
+
+**Regras de Negócio e Funcionalidades**
+* Buscas avançadas (slug, ID, tags)
+* Operações assíncronas (Async/Await)
+* Validações de dados de entrada
+* Arquivo de Configurações
+* Upload de Imagem de Produto
+* Enviando E-mail de Boas-vindas
+
+**Segurança e Deploy**
+* Autenticação e Autorização (JWT)
+* Habilitando CORS
+* Publicando a API
+</details>
+
+---
+*Desenvolvido com ☕ e foco em boas práticas de backend.*
