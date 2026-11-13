@@ -1,58 +1,33 @@
-# APIs com Node
+# 🛒 E-Commerce API - Node.js
 
-Curso [Criando APIs com Node](https://balta.io/cursos/criando-apis-com-node) da balta.io. </br> 
-"Neste curso vamos unir a popularidade das APIs com a popularidade do JavaScript criando uma API completa com Node.js, passando pelos principais pontos que você precisa conhecer para colocar seu projeto em produção."
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
 
-#### Projeto do Curso
-"O projeto do curso é uma API para uma vitrine de um e-commerce. A API contém as operações para manipular Produtos (CRUD), e modelos como Cliente e Pedido de Compra. Serão implementadas validações de dados, requisições síncronas/assíncronas. Também a parte de segurança/autenticação implementando login via token utilizando JWT."
+API RESTful completa desenvolvida em Node.js para o backend de uma vitrine de e-commerce. O projeto simula um ambiente de produção real, englobando desde a manipulação de dados (CRUD) até a implementação de regras de negócio, envio de e-mails e autenticação segura.
 
-### Conteúdo Programático (Ementa oficial direto do diretório original)
-* Instalação Node, NPM e VS Code
-* npm init e instalação dos pacotes
-* Criando um servidor Web
-* Normalizando a porta
-* Gerenciando Erros do Servidor
-* Iniciando o Debug
-* Separando o Servidor
-* Configurando o NPM Start
-* Nodemon
-* CRUD REST
-* Rotas
-* Controllers
-* MongoDb Setup
-* Mongooose
-* Models
-* Criando um Produto
-* Listando os Produtos
-* Listando um Produto pelo slug
-* Listando um Produto pelo Id
-* Listando os Produtos de uma tag
-* Atualizando um produto
-* Excluindo um produto
-* Validações
-* Repositórios
-* Async/Await
-* Revisitando os Models: Customer
-* Revisitando os Models: Order
-* Revisitando os Models: OrderItems
-* Revisitando os Controllers: Customer
-* Revisitando os Controllers: Order
-* Arquivo de Configurações
-* Enviando E-mail de Boas Vindas
-* Upload da Imagem do Produto
-* Autenticação
-* Autorização
-* Habilitando CORS
-* Publicando a API
+> 🎓 *Este projeto foi desenvolvido para consolidar conceitos de arquitetura backend e APIs REST, acompanhando o curso [Criando APIs com Node](https://balta.io/cursos/criando-apis-com-node) da balta.io.*
 
 ---
-#### Ferramentas
 
-* npm 10.9.0
-* Node.js v22.11.0
-* Postman
-* Docker [Instalação, Configuração e Primeiros Passos](https://blog.balta.io/docker-instalacao-configuracao-e-primeiros-passos/)
-* MongoDB (via Docker) [MongoDB Docker](https://blog.balta.io/mongodb-docker/)
+## 🚀 Principais Funcionalidades
+
+O projeto contempla os seguintes recursos e regras de negócio:
+
+* **Gestão de Produtos:** Operações completas de CRUD (Criar, Ler, Atualizar e Excluir), busca por *slug*, *ID* e *tags*, além de upload de imagens.
+* **Gestão de Clientes & Pedidos:** Modelagem de dados relacionais e não-relacionais, vinculando clientes aos seus respectivos pedidos e itens.
+* **Segurança & Autenticação:** Geração e validação de tokens JWT para rotas privadas, garantindo controle de acesso (Autorização).
+* **Comunicação:** Integração com serviço de envio de e-mails (boas-vindas para novos clientes).
+* **Validação:** Tratamento de erros, validação de dados de entrada e configurações de CORS.
 
 ---
-*Esse repositório foi criado com fins educacionais, acompanhando as aulas, para consolidar conceitos de desenvolvimento de APIs em Node.js.*
+
+## 🛠️ Tecnologias e Ferramentas
+
+* **Linguagem / Plataforma:** JavaScript (Node.js v22.11)
+* **Banco de Dados:** MongoDB (executado via Docker)
+* **Gerenciador de Pacotes:** npm (v10.9)
+* **Teste de Rotas:** Postman
+* **Conceitos Aplicados:** Padrão MVC (Models, Controllers, Repositories), Async/Await, Middlewares.
+
